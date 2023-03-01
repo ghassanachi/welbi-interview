@@ -1,38 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welbi Interview
 
-## Getting Started
+Here is my submission for the Welbi Coding Assessment, I decided to go with the front-end since it gave me an opportunity to play around with some Frameworks I had either not used or hadn't used in a little while.
 
-First, run the development server:
+## Architecture
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. _NextJs_: I have used Next in the past and really enjoyed it, and I also noticed it was mentioned in the Job Description so I thought it was appropriate to use it here.
+1. _SWR_: I've used `react-query` a lot in the past, but I've found that the integration with Next is always a little finicky. So instead I gabe Vercel's own _SWR_ a go, and played around with SSR as well to see how nice it was to work
+1. _Tailwind_: I love tailwind, and it is my go to for most projects. I also find that Tailwind UI gives a great starting point, since I am not the greatest with design, so when I don't have the luxury of having a designer on hand, I find myself looking at Tailwind UI for inspiration and a good starting point.
+1. _NextAuth_: Great library, and it makes it a little easier to manage sessions in a SSR and Client side context.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Pages
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. _Programs_: Program page that show all the programs and participants in a grid view. I added a simple search bar at the top to be able to filter programs by name.
+1. _Residents_: I know this was not asked as part of the interview, but a lot of code could be reused from the programs page so I thought I would include it.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Notes
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+I started working on the "Create Resident" page, but since I was running over on the time I decided to stop and disabled to button to naviate to the page. Since you mentioned that I could use this for my portfolio, and I enjoyed building this website, I might add it in the future along with some other functionality like Create Program, Add Resident to program.
