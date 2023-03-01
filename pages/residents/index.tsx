@@ -9,6 +9,7 @@ import useSWR from 'swr'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '../api/auth/[...nextauth]'
 import { fetcher } from '#/utils/api'
+import Head from 'next/head'
 
 const getAge = (birthDate: Date) => Math.floor((new Date().getTime() - birthDate.getTime()) / 3.15576e10)
 
@@ -117,6 +118,9 @@ export default function Residents() {
 
   return (
     <Layout>
+      <Head>
+        <title>Residents</title>
+      </Head>
       <div className="flex flex-row mb-8 gap-8">
         <SearchBar
           className="flex-1"

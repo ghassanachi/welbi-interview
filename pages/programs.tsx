@@ -10,6 +10,7 @@ import { getServerSession } from 'next-auth'
 import { authOptions } from './api/auth/[...nextauth]'
 import { fetcher } from '#/utils/api'
 import Avatar from '#/components/avatar'
+import Head from 'next/head'
 
 const information: {
   label: string
@@ -138,6 +139,9 @@ export default function Programs() {
 
   return (
     <Layout>
+      <Head>
+        <title>Programs</title>
+      </Head>
       <div className="flex flex-row mb-8 gap-4">
         <SearchBar
           className="flex-1"
