@@ -1,6 +1,7 @@
 import Sidebar from '#/components/sidebar'
 import { Menu, Transition } from '@headlessui/react'
 import { ArrowLeftOnRectangleIcon, UserIcon } from '@heroicons/react/24/outline'
+import { signOut } from 'next-auth/react'
 import { Fragment, ReactElement } from 'react'
 
 export default function Layout({ children }: { children: ReactElement | ReactElement[] }) {
@@ -27,6 +28,7 @@ export default function Layout({ children }: { children: ReactElement | ReactEle
                   <Menu.Item>
                     {({ active }) => (
                       <button
+                        onClick={() => signOut()}
                         className={`${
                           active ? 'bg-blue-300' : 'text-gray-900'
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
