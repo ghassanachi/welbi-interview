@@ -2,6 +2,12 @@
 
 Here is my submission for the Welbi Coding Assessment, I decided to go with the front-end since it gave me an opportunity to play around with some Frameworks I had either not used or hadn't used in a little while.
 
+## Live Version
+
+I deployed user docker-compose and Caddy on a personal server running a few other websites/tools link is below:
+
+https://welbi.ghassanachi.com
+
 ## Architecture
 
 1. _NextJs_: I have used Next in the past and really enjoyed it, and I also noticed it was mentioned in the Job Description so I thought it was appropriate to use it here.
